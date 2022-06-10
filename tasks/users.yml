@@ -1,12 +1,12 @@
 - name: create ansible user
   user:
-    name: ansible
+    name: cp
     system: yes
 
 - name: copy sudoers_ansible
   copy:
     src: files/sudoers_ansible
-    dest: /etc/sudoers.d/ansible
+    dest: /etc/sudoers.d/cp
     owner: root
     group: root
     mode: 0440
